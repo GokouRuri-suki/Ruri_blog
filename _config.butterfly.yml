@@ -1,0 +1,186 @@
+# Hexo Butterfly 主题配置 - Google商店极简风格
+
+# 导航栏
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
+# 首页欢迎图
+default_top_img: /img/ruri_white.png
+index_img: /img/ruri_white.png
+
+# 菜单
+menu:
+  主页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+
+# 代码块
+code_blocks:
+  theme: light
+  macStyle: false
+  copy: true
+  language: true
+  shrink: false
+
+# 头像与个人信息
+avatar:
+  img: https://github.com/GokouRuri-suki.png
+  effect: false
+
+# 社交链接
+social: {}
+
+# 个人资料卡
+aside:
+  enable: true
+  position: left
+  card_author:
+    enable: true
+    description: '记录生活与技术，保持轻量与持续输出。'
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/GokouRuri-suki
+  card_announcement:
+    enable: true
+    content: '记录生活、技术与轻量思考。'
+  card_recent_post:
+    enable: true
+    limit: 5
+  card_tags:
+    enable: true
+    limit: 40
+  card_archives:
+    enable: true
+    type: monthly
+    limit: 8
+
+# 页脚
+footer:
+  owner:
+    enable: false
+    since: 2026
+  custom_text: '&copy;&nbsp;2026 - 2027 By GokouRuri-suki'
+  copyright: false
+
+# 主题颜色 - 极简中性灰
+theme_color:
+  enable: true
+  main: '#1f2430'
+  paginator: '#1f2430'
+  button_hover: '#2f3746'
+  text_selection: '#1f2430'
+  link_color: '#1f2430'
+  link_hover_color: '#4b5563'
+
+# 夜间模式
+darkmode:
+  enable: true
+  button: true
+
+# 文章元数据
+post_meta:
+  date_type: created
+  categories: true
+  tags: false
+  update_format: relative
+
+# 首页设置
+index_post_content:
+  method: 1
+  length: 150
+
+# 页头
+header:
+  theme_mode: true
+  search: true
+
+# 动画
+animate:
+  enable: true
+  post:
+    duration: 0.4
+  header:
+    duration: 0.4
+
+# 字体 - Google字体
+font:
+  global-font-size: 18px
+  code-font-size: 16px
+  font-family: 'Roboto, "Helvetica Neue", Arial, sans-serif'
+
+# 卡片样式 - Material Design
+card:
+  border_radius: 16px
+  shadow: '0 8px 24px rgba(0, 0, 0, 0.12)'
+  background: '#ffffff'
+
+# 文章卡片优化
+post_card:
+  image_height: 280px
+  excerpt_length: 150
+  show_category: true
+  show_tags: false
+  show_read_time: true
+
+# 导航栏样式
+navbar:
+  height: 64px
+  background: '#ffffff'
+  shadow: '0 2px 4px rgba(0,0,0,0.1)'
+
+# 响应式设计
+responsive:
+  mobile_breakpoint: 600px
+  tablet_breakpoint: 960px
+  desktop_breakpoint: 1280px
+
+# 极简功能
+fancybox: false
+lazyload: false
+pjax: false
+
+# 搜索配置
+search:
+  enable: true
+  type: local
+  content_max: 40
+  content_min: 1
+
+# 分享功能 - 简化
+share:
+  enable: false
+
+# 评论系统 - 简化
+comment:
+  enable: false
+
+# 数学公式 - 简化
+math:
+  enable: false
+
+# 打赏功能 - 简化
+reward:
+  enable: false
+
+# 页脚信息简化
+footer_info:
+  theme_version: false
+  hexo_version: false
+  since: 2024
+  icp: false
+
+# 自定义注入 - 只保留正式样式文件
+inject:
+  head:
+    - <link rel="preconnect" href="https://fonts.googleapis.com">
+    - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    - <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    - <link rel="stylesheet" href="/project/css/google-style.css">
+  
+  bottom: []
