@@ -7,9 +7,12 @@ nav:
   display_post_title: true
   fixed: true
 
+# 站点图标
+favicon: /img/favicon.ico
+
 # 首页欢迎图
-default_top_img: /img/ruri_white.png
-index_img: /img/ruri_white.png
+default_top_img: /img/ruri_white.webp
+index_img: /img/ruri_white.webp
 
 # 菜单
 menu:
@@ -95,50 +98,11 @@ index_post_content:
   method: 1
   length: 150
 
-# 页头
-header:
-  theme_mode: true
-  search: true
-
-# 动画
-animate:
-  enable: true
-  post:
-    duration: 0.4
-  header:
-    duration: 0.4
-
 # 字体 - Google字体
 font:
-  global-font-size: 18px
-  code-font-size: 16px
-  font-family: 'Roboto, "Helvetica Neue", Arial, sans-serif'
-
-# 卡片样式 - Material Design
-card:
-  border_radius: 16px
-  shadow: '0 8px 24px rgba(0, 0, 0, 0.12)'
-  background: '#ffffff'
-
-# 文章卡片优化
-post_card:
-  image_height: 280px
-  excerpt_length: 150
-  show_category: true
-  show_tags: false
-  show_read_time: true
-
-# 导航栏样式
-navbar:
-  height: 64px
-  background: '#ffffff'
-  shadow: '0 2px 4px rgba(0,0,0,0.1)'
-
-# 响应式设计
-responsive:
-  mobile_breakpoint: 600px
-  tablet_breakpoint: 960px
-  desktop_breakpoint: 1280px
+  global_font_size: 18px
+  code_font_size: 16px
+  font_family: 'Roboto, "Helvetica Neue", Arial, sans-serif'
 
 # 极简功能
 fancybox: false
@@ -149,28 +113,38 @@ pjax: false
 search:
   use:
 
-# 分享功能 - 简化
+# 分享功能 - 关闭
 share:
-  enable: false
+  use:
 
-# 评论系统 - 简化
-comment:
-  enable: false
+# 评论系统 - Utterances（GitHub Issues 留言，网站保持静态）
+comments:
+  use: Utterances
+  text: true
+  lazyload: false
+  count: false
 
-# 数学公式 - 简化
+utterances:
+  repo: GokouRuri-suki/Ruri_blog
+  issue_term: pathname
+  light_theme: github-light
+  dark_theme: photon-dark
+  option:
+    label: '💬 评论'
+
+# 数学公式 - 关闭
 math:
-  enable: false
+  use:
 
 # 打赏功能 - 简化
 reward:
   enable: false
 
-# 页脚信息简化
-footer_info:
-  theme_version: false
-  hexo_version: false
-  since: 2024
-  icp: false
+# 404 页面
+error_404:
+  enable: true
+  subtitle: '页面走丢了'
+  background: /img/error-page.png
 
 # 自定义注入 - 只保留正式样式文件
 inject:
